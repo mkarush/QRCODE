@@ -12,8 +12,8 @@ Flow:
 
 ## Getting Started
 
-Starting Node.js server:
-<img src="https://github.com/mkarush/QRCODE/blob/main/generator/images/nodes-js.png" width="48">
+Starting Node.js server:<br>
+<img src="https://github.com/mkarush/QRCODE/blob/main/generator/images/nodes-js.png" width="100" height="100">
 
 A few resources to get you started if this is your first Flutter project:
 
