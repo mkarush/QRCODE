@@ -11,15 +11,17 @@ Flow:
 6. scan.dart: Capture scan code using barcode scanner and display data.
 
 ## Getting Started
+![Node.js Server](https://github.com/mkarush/QRCODE/blob/main/generator/images/nodes-js.png)
+1. Starting Node.js Server<br>
 
-Starting Node.js server:<br>
-<img src="https://github.com/mkarush/QRCODE/blob/main/generator/images/nodes-js.png" width="100" height="100">
+![HomePage](https://github.com/mkarush/QRCODE/blob/main/generator/images/floatingActionButton.png)
+2. HomePage <br>
 
-A few resources to get you started if this is your first Flutter project:
+![Generate Code](https://github.com/mkarush/QRCODE/blob/main/generator/images/QRCODE.png)
+3. Generate Code <br>
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+![Scan Code](https://github.com/mkarush/QRCODE/blob/main/generator/images/SCAN.png)
+4. Scan Code <br>
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Scan Result](https://github.com/mkarush/QRCODE/blob/main/generator/images/ScanResult.png)
+4. Scan Result <br>
