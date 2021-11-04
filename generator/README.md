@@ -1,6 +1,6 @@
 # generator
 
-A new Flutter project.
+This Flutter project will Generate QR Code and Scan QR code.
 
 ## Getting Started
 
