@@ -12,7 +12,8 @@ Flow:
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Starting Node.js server:
+<img src="https://github.com/mkarush/QRCODE/blob/main/generator/images/nodes-js.png" width="48">
 
 A few resources to get you started if this is your first Flutter project:
 
