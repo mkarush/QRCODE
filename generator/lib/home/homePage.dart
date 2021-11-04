@@ -15,7 +15,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: backAppBar(context, label: widget.title),
-      body: bodyData(),
+      body: SafeArea(child: bodyData()),
       floatingActionButton: floatingButton(),
     );
   }
@@ -29,20 +29,18 @@ class _MyHomePageState extends State<MyHomePage> {
       );
 
   Widget floatingButton() => SpeedDial(
-    animatedIcon: AnimatedIcons.menu_close,
-    children: [
-      SpeedDialChild(
-        child: Icon(Icons.qr_code),
-        backgroundColor: Theme.of(context).primaryColor,
-        label: 'QR CODE',
-        onTap: () => Navigator.pushNamed(context, '/GeneratePage')
-      ),
-      SpeedDialChild(
-          child: Icon(Icons.qr_code_scanner_outlined),
-          backgroundColor: Theme.of(context).primaryColor,
-          label: 'SCAN',
-          onTap: () => Navigator.pushNamed(context, '/ScanPage')
-      )
-    ],
-  ); // This trailing c
+        animatedIcon: AnimatedIcons.menu_close,
+        children: [
+          SpeedDialChild(
+              child: Icon(Icons.qr_code),
+              backgroundColor: Theme.of(context).primaryColor,
+              label: 'QR CODE',
+              onTap: () => Navigator.pushNamed(context, '/GeneratePage')),
+          SpeedDialChild(
+              child: Icon(Icons.qr_code_scanner_outlined),
+              backgroundColor: Theme.of(context).primaryColor,
+              label: 'SCAN',
+              onTap: () => Navigator.pushNamed(context, '/ScanPage'))
+        ],
+      ); // This trailing c
 }

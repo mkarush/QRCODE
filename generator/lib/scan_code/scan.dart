@@ -20,7 +20,7 @@ class _ScanPageState extends State<ScanPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: backAppBar(context, label: "SCAN"),
-      body: scanWidget(),
+      body: SafeArea(child: scanWidget()),
     );
   }
 

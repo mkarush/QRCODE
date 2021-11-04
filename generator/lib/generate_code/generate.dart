@@ -28,9 +28,11 @@ class GeneratePageState extends State<GeneratePage> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: backAppBar(context, label: 'QR CODE'),
-        body: countDown
-            ? Center(child: CircularProgressIndicator())
-            : qrMethod());
+        body: SafeArea(
+          child: countDown
+              ? Center(child: CircularProgressIndicator())
+              : qrMethod(),
+        ));
   }
 
   Widget qrMethod() => Center(
@@ -82,7 +84,7 @@ class GeneratePageState extends State<GeneratePage> {
     const oneSec = const Duration(seconds: 1);
     _timer = Timer.periodic(
       oneSec,
-          (Timer timer) {
+      (Timer timer) {
         if (_start == 0) {
           getData();
           reset();
