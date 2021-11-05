@@ -10,6 +10,11 @@ Flow:
 5. generate.dart: Read data from node.js server using http request and display qr code with timer 15 seconds. Timer timeout and we get new qr code.
 6. scan.dart: Capture scan code using barcode scanner and display data.
 
+How to run job:
+1. Open terminal and cd node-js
+2. run command: npm start (it will start node.js server)
+3. Open Emulator and do flutter run to run the code.
+
 ## Getting Started
 ![Node.js Server](https://github.com/mkarush/QRCODE/blob/main/generator/images/nodes-js.png)
 1. Starting Node.js Server<br>
