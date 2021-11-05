@@ -30,3 +30,5 @@ How to run job:
 
 ![Scan Result](https://github.com/mkarush/QRCODE/blob/main/generator/images/ScanResult.png)
 4. Scan Result <br>
+
+Thinks can be improved if we use bloc_patter. Working on to improve it.
