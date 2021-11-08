@@ -32,6 +32,8 @@ dependencies:
   qr_flutter: ^4.0.0
   http: ^0.13.0
   flutter_speed_dial: ^4.2.0
+  test: ^1.16.0
+  test_api: ^0.4.2
 
 dev_dependencies:
   flutter_test:
