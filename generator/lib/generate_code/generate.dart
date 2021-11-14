@@ -54,7 +54,7 @@ class GeneratePageState extends State<GeneratePage> {
         ),
       );
 
-  getData() async {
+  Future<void> getData() async {
     try {
       setState(() {
         countDown = true;
