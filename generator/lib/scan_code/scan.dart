@@ -19,7 +19,7 @@ class _ScanPageState extends State<ScanPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: backAppBar(context, label: "SCAN"),
+      appBar: BackAppBar(label: "SCAN"),
       body: SafeArea(child: scanWidget()),
     );
   }

@@ -14,7 +14,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: backAppBar(context, label: widget.title),
+      appBar: BackAppBar(label: widget.title),
       body: SafeArea(child: bodyData()),
       floatingActionButton: floatingButton(),
     );
@@ -35,12 +35,12 @@ class _MyHomePageState extends State<MyHomePage> {
               child: Icon(Icons.qr_code),
               backgroundColor: Theme.of(context).primaryColor,
               label: 'QR CODE',
-              onTap: () => Navigator.pushNamed(context, '/GeneratePage')),
+              onTap: () => Navigator.pushNamed(context, '/generatePage')),
           SpeedDialChild(
               child: Icon(Icons.qr_code_scanner_outlined),
               backgroundColor: Theme.of(context).primaryColor,
               label: 'SCAN',
-              onTap: () => Navigator.pushNamed(context, '/ScanPage'))
+              onTap: () => Navigator.pushNamed(context, '/scanPage'))
         ],
       ); // This trailing c
 }

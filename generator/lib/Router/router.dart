@@ -5,9 +5,9 @@ import 'package:generator/scan_code/scan.dart';
 class RouteGenerator {
   static Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {
-      case '/GeneratePage':
+      case '/generatePage':
         return MaterialPageRoute(builder: (_) => GeneratePage());
-      case '/ScanPage':
+      case '/scanPage':
         return MaterialPageRoute(builder: (_) => ScanPage());
       default:
         return _errorRoute();

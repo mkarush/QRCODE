@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:generator/Router/router.dart';
-import 'package:generator/home/homePage.dart';
+import 'package:generator/home/home_page.dart';
 
 Future main() async {
   WidgetsFlutterBinding.ensureInitialized();

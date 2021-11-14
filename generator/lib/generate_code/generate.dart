@@ -15,19 +15,19 @@ class GeneratePageState extends State<GeneratePage> {
   bool countDown = true;
 
   void initState() {
-    super.initState();
     getData();
+    super.initState();
   }
 
   String _data = "";
 
-  late Timer _timer;
+  Timer? _timer;
   int _start = 15;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: backAppBar(context, label: 'QR CODE'),
+        appBar: BackAppBar(label: 'QR CODE'),
         body: SafeArea(
           child: countDown
               ? Center(child: CircularProgressIndicator())
@@ -75,7 +75,7 @@ class GeneratePageState extends State<GeneratePage> {
 
   void reset() {
     setState(() {
-      _timer.cancel();
+      _timer?.cancel();
       _start = 15;
     });
   }
@@ -103,6 +103,6 @@ class GeneratePageState extends State<GeneratePage> {
   @override
   void dispose() {
     super.dispose();
-    _timer.cancel();
+    _timer?.cancel();
   }
 }
