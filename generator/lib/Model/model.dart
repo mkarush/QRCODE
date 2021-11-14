@@ -1,7 +1,7 @@
 class QueryData {
-  String? name;
+  final String? name;
 
-  QueryData({required this.name});
+  const QueryData({required this.name});
 
   factory QueryData.fromJson(Map<String, dynamic> json) {
     return QueryData(name: json['name']);
